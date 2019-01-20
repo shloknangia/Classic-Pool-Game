@@ -11,12 +11,12 @@ function assetsLoadingLoop(callback){
     }
 }
 
-function loasAssets(callback){
+function loadAssets(callback){
     
     function loadSprite(fileName){
         assetsStillLoading++;
         let spriteImage = new Image();
-        spriteImage.src = './assets/sprites/' + fileNames;
+        spriteImage.src = './assets/sprites/' + fileName;
         spriteImage.onload = function() {
             assetsStillLoading--;
         }
